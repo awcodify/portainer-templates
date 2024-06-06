@@ -1,0 +1,40 @@
+{
+    "version": 2,
+    "templates": [
+        {
+            "categories": [
+              "Other"
+            ],
+            "description": "Ruby deployment",
+            "env": [
+                {
+                    "label": "IMAGE_REGISTRY_URL",
+                    "name": "Image registry repository url"
+                },
+                {
+                    "label": "IMAGE_NAME",
+                    "name": "Image name"
+                },
+                {
+                    "label": "IMAGE_TAG",
+                    "name": "Image tag"
+                },
+                {
+                    "default": "0.0.0.0",
+                    "label": "LISTEN_ADDRESS",
+                    "name": "Listen address"
+                }
+            ],
+            "name": "Ruby on Rails",
+            "platform": "linux",
+            "repository": {
+              "stackfile": "stacks/rails.yml",
+              "url": "https://github.com/awcodify/portainer-templates"
+            },
+            "restart_policy": "unless-stopped",
+            "title": "Ruby on Rails",
+            "type": 3,
+            "note": "Deployment template for Ruby on Rails application"
+          }
+    ]
+}
