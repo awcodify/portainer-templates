@@ -28,7 +28,7 @@
             "name": "Ruby on Rails",
             "platform": "linux",
             "repository": {
-              "stackfile": "stacks/rails.yml",
+              "stackfile": "stacks/rails.yaml",
               "url": "https://github.com/awcodify/portainer-templates"
             },
             "restart_policy": "unless-stopped",
