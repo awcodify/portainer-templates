@@ -8,13 +8,22 @@
             "description": "Ruby deployment",
             "env": [
                 {
-                    "label": "IMAGE_URL",
+                    "label": "IMAGE_REPO",
                     "name": "Image registry repository url"
+                },
+                {
+                    "label": "IMAGE_VERSION",
+                    "name": "Image version/tag",
+                    "default": "latest"
                 },
                 {
                     "default": "0.0.0.0",
                     "label": "LISTEN_ADDRESS",
                     "name": "Listen address"
+                },
+                {
+                    "label": "EXPOSED_PORT",
+                    "name": "Exposed port"
                 }
             ],
             "name": "Ruby on Rails",

@@ -1,9 +1,9 @@
-version: '3.6'
+version: '3'
 services:
   web:
-    image: ${IMAGE_URL}
-    command: bundle exec rails s -b $${ LISTEN_ADDRESS }
+    image: ${IMAGE_REPO}:${IMAGE_VERSION}
+    command: bundle exec rails s ${LISTEN_ADDRESS}
     volumes:
       - .:/app
     ports:
-      - "3000:3000"
+      - "${EXPOSED_PORT}:3000"
