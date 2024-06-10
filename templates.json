@@ -33,7 +33,7 @@
             },
             "restart_policy": "unless-stopped",
             "title": "Ruby on Rails",
-            "type": 2,
+            "type": "stack",
             "note": "Deployment template for Ruby on Rails application"
           }
     ]

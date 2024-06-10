@@ -1,8 +1,8 @@
 version: '3.6'
 services:
   web:
-    image: {{ IMAGE_REGISTRY_URL }}/{{ IMAGE_NAME }:{{ IMAGE_TAG }}
-    command: bundle exec rails s -b {{ LISTEN_ADDRESS }}
+    image: ${ IMAGE_REGISTRY_URL }/${ IMAGE_NAME }:${ IMAGE_TAG }
+    command: bundle exec rails s -b ${LISTEN_ADDRESS}
     volumes:
       - .:/app
     ports:
