@@ -8,16 +8,8 @@
             "description": "Ruby deployment",
             "env": [
                 {
-                    "label": "IMAGE_REGISTRY_URL",
+                    "label": "IMAGE_URL",
                     "name": "Image registry repository url"
-                },
-                {
-                    "label": "IMAGE_NAME",
-                    "name": "Image name"
-                },
-                {
-                    "label": "IMAGE_TAG",
-                    "name": "Image tag"
                 },
                 {
                     "default": "0.0.0.0",
