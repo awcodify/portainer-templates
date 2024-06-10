@@ -2,7 +2,7 @@ version: '3'
 services:
   web:
     image: ${IMAGE_REPO}:${IMAGE_VERSION}
-    command: bundle exec rails s ${LISTEN_ADDRESS}
+    command: ${RAILS_COMMAND}
     volumes:
       - .:/app
     ports:

@@ -24,6 +24,11 @@
                 {
                     "label": "EXPOSED_PORT",
                     "name": "Exposed port"
+                },
+                {
+                    "label": "RAILS_COMMAND",
+                    "name": "Command to run the rails app",
+                    "default": "bundle exec rails s"
                 }
             ],
             "name": "Ruby on Rails",
