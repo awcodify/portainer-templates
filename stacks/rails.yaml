@@ -3,7 +3,5 @@ services:
   web:
     image: ${IMAGE_REPO}:${IMAGE_VERSION}
     command: ${RAILS_COMMAND}
-    volumes:
-      - .:/app
     ports:
       - "${EXPOSED_PORT}:3000"
